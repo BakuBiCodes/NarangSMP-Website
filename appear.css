@@ -1,0 +1,33 @@
+.whole {
+  animation: transitionIn 4s;
+}
+
+.image-right {
+  animation: updown 2s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
